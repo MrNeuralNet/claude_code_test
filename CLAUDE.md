@@ -19,5 +19,7 @@ Win detection uses the hard-coded `WINS` array of 8 triplets (rows, columns, dia
 ## Git & GitHub
 
 - Remote: `https://github.com/MrNeuralNet/claude_code_test` (branch `main`)
-- Commit every meaningful change with a concise imperative subject line, then push: `git push`
-- Keep commits focused — one logical change per commit so history stays easy to revert
+- **Commit and push after every meaningful unit of work** — a new feature, a bug fix, a refactor, or a significant edit all warrant their own commit. Never leave completed work uncommitted.
+- Use a concise imperative subject line (e.g. `Add win animation`, `Fix AI move delay`). If the reason isn't obvious from the change itself, add a short body line explaining why.
+- Keep commits focused — one logical change per commit so any individual change can be reverted cleanly.
+- Push to `origin main` immediately after each commit: `git push`. The goal is that the remote always reflects the current state of the project so no work is ever at risk.
